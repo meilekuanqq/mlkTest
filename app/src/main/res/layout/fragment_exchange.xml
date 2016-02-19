@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/title_bar_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="积分商城"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View style="@style/public_gray_horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/exchange_type_new"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-0.5dp"
+            android:background="@drawable/selector_gift_type_left"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/exchang_type_new"
+            android:textColor="@color/select_btn_text_blue" />
+
+        <TextView
+            android:id="@+id/exchange_type_hot"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-0.5dp"
+            android:background="@drawable/selector_gift_type_right"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/exchang_type_hot"
+            android:textColor="@color/select_btn_text_blue" />
+    </LinearLayout>
+    <!--列表-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/exchange_type_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

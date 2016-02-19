@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- name 和 对应的类名一样， 那么这个attrs属性就好这个类绑定了 -->
+    <declare-styleable name="MainWidget">
+        <attr name = "src" format="reference|color"/>
+        <attr name = "text" format = "reference|string"/>
+        <attr name="border_width" format="reference|dimension" />
+        <attr name="border_color" format="reference|color" />
+    </declare-styleable>
+</resources>

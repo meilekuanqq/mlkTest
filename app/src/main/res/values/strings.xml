@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">手游助手</string>
+    <string name="public_cancel">取消</string>
+    <string name="public_upgrade">立即更新</string>
+
+    <!--主页面-->
+    <string name="home_rb_profit">赚钱</string>
+    <string name="home_rb_gift">礼包</string>
+    <string name="home_rb_active">活动</string>
+    <string name="home_rb_exchang">兑换</string>
+    <string name="home_rb_my">我的</string>
+
+    <!--礼包-->
+    <string name="gift_search_gift">搜礼包</string>
+    <string name="gift_type_mobile">手游礼包</string>
+    <string name="gift_type_web">页游礼包</string>
+    <string name="gift_list_btn1">淘号</string>
+    <string name="gift_list_btn2">免费领取</string>
+    <string name="gift_list_remain">剩余：%1d</string>
+
+    <string name="gift_info_title">礼包详情</string>
+    <string name="gift_info_remain">剩余量:</string>
+    <string name="gift_info_validity">有效期: %1$s -- %2$s</string>
+    <string name="gift_info_uesd">适用于</string>
+    <string name="gift_info_type">类型：%1s </string>
+    <string name="gift_info_size">大小：%1s</string>
+    <string name="gift_info_get_method">领取方式</string>
+    <string name="gift_info_content">礼包内容</string>
+    <string name="gift_info_down_load">下载游戏</string>
+    <string name="gift_info_down_per">%1$d / %2$s</string>
+    <string name="gift_info_consume">%1S U币</string>
+
+    <string name="share_wb">微博</string>
+    <string name="share_wx">微信</string>
+    <string name="share_pyq">朋友圈</string>
+    <string name="share_qq">QQ好友</string>
+    <!-- 兑换-->
+    <string name="exchang_title_mallshop">积分商城</string>
+    <string name="exchang_type_new">最新奖品</string>
+    <string name="exchang_type_hot">最热奖品</string>
+    <string name="exchang_list_btn">兑换</string>
+    <string name="exchang_list_consume">价值：%1s U币</string>
+    <string name="exchang_list_remain">剩余：%1d</string>
+    <string name="exchang_list_title">积分商城</string>
+    <string name="exchang_list_ubi">U币</string>
+    <string name="exchang_list_info_remain">剩余数量:%1S</string>
+    <string name="exchang_list_info_huan">立即兑换</string>
+
+    <!--赚钱-->
+    <string name="profit_search_gift">搜游戏</string>
+    <string name="profit_type_score">签到得分</string>
+    <string name="profit_type_task">今日任务</string>
+    <string name="profit_type_mall">积分商城</string>
+    <string name="profit_down_ubi">奖3000U币</string>
+    <string name="profit_down_person">人下载</string>
+    <string name="profit_list_ubi">%1SU币</string>
+    <string name="profit_list_message">游戏信息</string>
+    <string name="profit_list_gift">游戏礼包</string>
+    <string name="profit_list_comment">评论</string>
+    <string name="profit_title_info">游戏详情</string>
+    <string name="profit_info_version">版本:%1S</string>
+    <string name="profit_info_count">%1S人参加</string>
+    <string name="active_list_score">+%1S</string>
+    <string name="active_info_commit">提交</string>
+    <string name="active_info_down">下载</string>
+
+    <!--活动-->
+
+    <string name="active_list_join">奖%1S 人参加</string>
+    <string name="active_title_info">活动详情</string>
+
+    <!--我的信息-->
+    <string name="user_login">用户登录</string>
+    <string name="user_register">注册</string>
+
+    <!--注册-->
+    <string name="activity_user_register">用户注册</string>
+</resources>

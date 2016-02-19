@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/adapter_exchange_header_iv"
+        android:layout_width="80dp"
+        android:layout_margin="10dp"
+        android:layout_height="80dp"
+ />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="@dimen/title_item_title_text_size"
+            android:id="@+id/adapter_exchange_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_margin="5dp"
+            android:textSize="@dimen/title_list_item_exchanget"
+            android:id="@+id/adapter_exchange_consume_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:singleLine="true"
+            android:layout_margin="5dp"
+            android:textSize="@dimen/title_list_item_exchanget"
+            android:id="@+id/adapter_exchange_remain_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/adapter_exchange_btn1"
+        android:layout_margin="10dp"
+        android:text="@string/exchang_list_btn"
+        android:layout_width="100dp"
+        android:textColor="@color/select_btn_text_blue"
+        android:background="@drawable/selector_gift_blue_btn"
+        android:layout_height="36dp" />
+</LinearLayout>

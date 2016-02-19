@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--显示上面的四个图标-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/share_wb_tv"
+            android:text="@string/share_wb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/logo_sinaweibo"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/share_wx_tv"
+            android:text="@string/share_wb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/logo_wechat"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/share_pyq_tv"
+            android:text="@string/share_wb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/logo_wechatmoments"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/share_qq_tv"
+            android:text="@string/share_wb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/logo_qq"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- 取消分享-->
+    <Button
+        android:id="@+id/sahre_btn"
+        android:layout_marginTop="10dp"
+        android:text="@string/public_cancel"
+        android:textColor="@color/select_btn_text_blue"
+        android:background="@drawable/selector_gift_blue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="36dp" />
+</LinearLayout>

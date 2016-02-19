@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/gift_user_head_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_usercenter_avatar" />
+
+        <EditText
+            android:id="@+id/gift_search_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/gift_user_head_iv"
+            android:background="@drawable/shape_input_bg"
+            android:hint="@string/profit_search_gift"
+            android:paddingLeft="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_input_search" />
+    </RelativeLayout>
+
+    <!-- 三个点击栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/profit_type_score_tv"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_profit_type"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/profit_type_score"
+            android:textColor="@color/select_btn_text_blue" />
+
+        <TextView
+            android:id="@+id/profit_type_task_tv"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_profit_type"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/profit_type_task"
+            android:textColor="@color/select_btn_text_blue" />
+
+        <TextView
+            android:id="@+id/profit_type_mall_tv"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_profit_type"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/profit_type_mall"
+            android:textColor="@color/select_btn_text_blue" />
+    </LinearLayout>
+    <View style="@style/public_gray_horizontal_line"
+        />
+    <!--列表-->
+    <com.meilekuan.zhushou_1514.other.widget.LoadMoreListView
+        android:id="@+id/profit_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mlk="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height">
+
+        <ImageView
+            android:id="@+id/game_title_bar_left_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_title_back_iv"
+            />
+
+        <TextView
+            android:id="@+id/game_title_bar_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="游戏详情"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+             />
+        <ImageView
+            android:id="@+id/game_title_bar_right_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_share"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profit_info_snapshot"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="130dp"
+            android:orientation="horizontal">
+
+            <com.meilekuan.zhushou_1514.gift.view.CircleImageView
+                android:id="@+id/profit_info_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                mlk:border_color="@color/progress_bar_progress"
+                mlk:border_width="2dp" />
+            />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/adapter_active_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="火影忍者" />
+
+                <RatingBar
+                    android:id="@+id/profit_info_ratingbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/selector_ratingbar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/profit_info_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="版本：2.222" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="|" />
+
+                    <TextView
+                        android:id="@+id/profit_info_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="333.6MB" />
+
+                    <TextView
+                        android:id="@+id/profit_info_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="1111人下載" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--游戏类型栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/profit_type_message"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-0.5dp"
+            android:background="@drawable/selector_gift_type_left"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/profit_list_message"
+            android:textColor="@color/select_btn_text_blue" />
+
+        <TextView
+            android:id="@+id/profit_type_gift"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-0.5dp"
+            android:background="@drawable/selecor_game_type_center"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/profit_list_gift"
+            android:textColor="@color/select_btn_text_blue" />
+
+        <TextView
+            android:id="@+id/profit_type_comment"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-0.5dp"
+            android:background="@drawable/selector_gift_type_right"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/profit_list_comment"
+            android:textColor="@color/select_btn_text_blue" />
+    </LinearLayout>
+
+    <View style="@style/public_gray_horizontal_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/proit_game_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/btn_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/profit_type_commit"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_game_type"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/active_info_commit"
+            android:textColor="@color/gray_white" />
+
+        <TextView
+            android:id="@+id/profit_type_down"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_game_type"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/active_info_down"
+            android:textColor="@color/gray_white" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/game_content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</LinearLayout>

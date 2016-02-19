@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gary_white"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <ImageView
+                    android:id="@+id/active_info_icon_iv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_default_avatar" />
+
+                <LinearLayout
+                    android:id="@+id/profit_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/active_info_icon_iv"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/active_info_username_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="72G纱纱" />
+
+                    <TextView
+                        android:id="@+id/active_info_build_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="创建角色并试玩5分钟"
+                        android:textColor="@color/viewfinder_laser"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/profit_info_jifen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toStartOf="@+id/active_info_date_tv"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_ub"
+                    android:text="400"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/active_info_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shape_game_no_finish"
+                    android:text="未完成"
+                    android:textColor="@color/gray_white" />
+                <!--试玩信息-->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="试玩信息"
+                    android:textSize="@dimen/text_size_20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="下载并试玩3分钟即可获得奖励!"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="注：必须在72G助手下载游戏才能获得奖励"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/cut_line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="游戏介绍"
+                    android:textSize="@dimen/text_size_20" />
+
+                <TextView
+                    android:id="@+id/profit_info_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="介绍中介绍中介绍中介绍中介绍中介绍中介绍中"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="猜你喜欢"
+                    android:textSize="@dimen/text_size_20" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/game_like_pic1"
+                            android:layout_width="@dimen/image_size03_h"
+                            android:layout_height="@dimen/image_size03_h"
+                            android:background="@drawable/ic_launcher"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:id="@+id/game_like_tv1"
+                            android:layout_width="70.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2.0dip"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="火影忍者"
+                            android:textColor="@color/subject_text_color"
+                            android:textSize="@dimen/text_size_20" />
+
+                        <TextView
+                            android:id="@+id/game_down_tv1"
+                            android:layout_width="70.0dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="564次下载"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/text_size_18" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/game_like_pic2"
+                            android:layout_width="@dimen/image_size03_h"
+                            android:layout_height="@dimen/image_size03_h"
+                            android:background="@drawable/ic_launcher"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:id="@+id/game_name_tv2"
+                            android:layout_width="70.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2.0dip"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="火影忍者"
+                            android:textColor="@color/subject_text_color"
+                            android:textSize="@dimen/text_size_20" />
+
+                        <TextView
+                            android:id="@+id/game_down_tv2"
+                            android:layout_width="70.0dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="564次下载"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/text_size_18" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/game_like_pic3"
+                            android:layout_width="@dimen/image_size03_h"
+                            android:layout_height="@dimen/image_size03_h"
+                            android:background="@drawable/ic_launcher"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:layout_width="70.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2.0dip"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="火影忍者"
+                            android:textColor="@color/subject_text_color"
+                            android:textSize="@dimen/text_size_20" />
+
+                        <TextView
+                            android:id="@+id/game_down_tv3"
+                            android:layout_width="70.0dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="564次下载"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/text_size_18" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/game_like_pic4"
+                            android:layout_width="@dimen/image_size03_h"
+                            android:layout_height="@dimen/image_size03_h"
+                            android:background="@drawable/ic_launcher"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:layout_width="70.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2.0dip"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="火影忍者"
+                            android:textColor="@color/subject_text_color"
+                            android:textSize="@dimen/text_size_20" />
+
+                        <TextView
+                            android:id="@+id/game_down_tv4"
+                            android:layout_width="70.0dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="564次下载"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/text_size_18" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mlk="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <com.meilekuan.zhushou_1514.gift.view.CircleImageView
+        android:id="@+id/adapter_gift_header_iv"
+        android:layout_width="80dp"
+        android:layout_margin="10dp"
+        android:layout_height="80dp"
+
+        mlk:border_width="2dp"
+        mlk:border_color="#4fc3f7"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="王者荣耀"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/title_item_title_text_size"
+            android:id="@+id/adapter_gift_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="王者荣耀"
+            android:textSize="@dimen/title_list_item_content"
+            android:id="@+id/adapter_gift_remain_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="王者荣耀"
+            android:singleLine="true"
+            android:textSize="@dimen/title_list_item_content"
+            android:id="@+id/adapter_gift_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/adapter_gift_btn1"
+        android:layout_margin="10dp"
+        android:text="@string/gift_list_btn1"
+        android:layout_width="100dp"
+        android:textColor="@color/select_btn_text_yellow"
+        android:background="@drawable/selector_gift_yelloe_btn"
+        android:layout_height="36dp" />
+    <Button
+        android:id="@+id/adapter_gift_btn2"
+        android:layout_margin="10dp"
+        android:text="@string/gift_list_btn2"
+        android:layout_width="100dp"
+        android:visibility="gone"
+        android:textColor="@color/select_btn_text_blue"
+        android:background="@drawable/selector_gift_blue_btn"
+        android:layout_height="36dp" />
+</LinearLayout>

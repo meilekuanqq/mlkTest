@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/bg_giftdetail_head"
+        android:gravity="center_vertical">
+
+        <!--左边的-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.meilekuan.zhushou_1514.other.widget.CircleImageView
+                android:id="@+id/gift_info_head_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/gift_info_ubi_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_ubi_bg" />
+        </LinearLayout>
+        <!--右边的-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gift_info_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="@string/gift_info_remain" />
+
+                <ProgressBar
+                    android:id="@+id/gift_info_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:progressDrawable="@drawable/layer_progres"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/gift_info_per_tv"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gift_info_validity_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gift_info_used_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gift_info_uesd"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/gift_info_android_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_android"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/gift_info_ios_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_ios"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--游戏类型，大小，下载游戏-->
+    <RelativeLayout
+        android:id="@+id/gift_info_type_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/gift_type_bg"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/gift_info_game_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/gift_info_game_size_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/gift_info_game_type_tv" />
+
+        <Button
+            android:id="@+id/gift_info_down_btn"
+            android:layout_width="100dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/selector_gift_blue_btn"
+            android:text="@string/gift_info_down_load" />
+    </RelativeLayout>
+
+    <!--礼包内容，领取方式-->
+    ·
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/gift_info_content"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gift_info_content_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/gift_info_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/gift_info_get_method"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gift_info_get_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/gift_info_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

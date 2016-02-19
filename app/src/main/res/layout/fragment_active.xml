@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/title_bar_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="社区活动"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+           />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/active_vp_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/active_tv_carousel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/colorAccent"
+            android:text="《72G游戏助手新版伤心》"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/active_ll_pointers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/active_list_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

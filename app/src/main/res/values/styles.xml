@@ -1,0 +1,99 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--主页面的RadioButton样式-->
+    <style name="home_radio_btn_style">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/select_rb_text</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!--一条灰色的横线-->
+    <style name="public_gray_horizontal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/light_gray</item>
+    </style>
+    <!--分享菜单的动画-->
+    <style name="share_pop_anim">
+        <!--进入动画-->
+        <item name="android:windowEnterAnimation">@anim/anim_share_pop_in</item>
+        <!--退出动画-->
+        <item name="android:windowExitAnimation">@anim/anim_share_pop_out</item>
+    </style>
+
+    <!--更新对话框的样式-->
+    <style name="upgrade_dialog_style" parent="android:Theme.Dialog">
+        <!--去掉默认的标题栏-->
+        <item name="android:windowNoTitle">true</item>
+        <!--让背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!--我的信息-->
+    <style name="MyAssis_rl">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="MyAssis_ll">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+    <style name="MyAssis_tx_btn">
+        <item name="android:textColor">@color/bg_blue</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginRight">20.0dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="MyAssis_my_tx">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="MyAssis_my_invar">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+    </style>
+    <style name="MyAssis_tx">
+        <item name="android:textSize">@dimen/text_size_26</item>
+        <item name="android:textColor">@color/account_text</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/selector_ratingbar</item>
+        <item name="android:minHeight">18dp</item>
+        <item name="android:maxHeight">18dp</item>
+    </style>
+</resources>

@@ -1,0 +1,51 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--标题栏-->
+    <dimen name="title_bar_height">50dp</dimen>
+    <dimen name="title_item_title_text_size">18sp</dimen>
+    <dimen name="title_list_item_content">14sp</dimen>
+    <dimen name="title_list_item_exchanget">15sp</dimen>
+
+
+    <dimen name="text_size_16">10.699982sp</dimen>
+    <dimen name="text_size_18">12.0sp</dimen>
+    <dimen name="text_size_20">13.299988sp</dimen>
+    <dimen name="text_size_22">14.699982sp</dimen>
+    <dimen name="text_size_24">16.0sp</dimen>
+    <dimen name="text_size_26">17.299988sp</dimen>
+    <dimen name="text_size_28">18.599976sp</dimen>
+    <dimen name="text_size_30">20.0sp</dimen>
+    <dimen name="text_size_32">24.0sp</dimen>
+    <dimen name="image_size01_w">146.0dip</dimen>
+    <dimen name="image_size01_h">71.0dip</dimen>
+    <dimen name="image_size02_w">58.669983dip</dimen>
+    <dimen name="image_size02_h">58.669983dip</dimen>
+    <dimen name="image_size03_w">360.0dip</dimen>
+    <dimen name="image_size03_h">69.29999dip</dimen>
+    <dimen name="divider_height">1.0px</dimen>
+    <dimen name="drag_page_width">294.0dip</dimen>
+    <dimen name="content_width">300.0dip</dimen>
+    <dimen name="content_margin1">6.5999756dip</dimen>
+    <dimen name="content_margin">10.599976dip</dimen>
+    <dimen name="content_margin2">13.299988dip</dimen>
+    <dimen name="avatar_height">48.0dip</dimen>
+    <dimen name="avatar_width">48.0dip</dimen>
+    <dimen name="banner_height">74.0dip</dimen>
+    <dimen name="uploadimg_height">800.0dip</dimen>
+    <dimen name="uploadimg_width">480.0dip</dimen>
+    <dimen name="picture_pull_to_refresh_loading_text_size">14.0dip</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_text_size">10.0dip</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_top_margin">6.0dip</dimen>
+    <dimen name="picture_pull_to_refresh_footer_height">40.0dip</dimen>
+    <dimen name="indicator_right_padding">10.0dip</dimen>
+    <dimen name="indicator_corner_radius">12.0dip</dimen>
+    <dimen name="indicator_internal_padding">4.0dip</dimen>
+    <dimen name="header_footer_left_right_padding">24.0dip</dimen>
+    <dimen name="header_footer_top_bottom_padding">12.0dip</dimen>
+
+
+</resources>
